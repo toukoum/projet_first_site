@@ -1,0 +1,127 @@
+
+header
+{
+    display:flex;
+    justify-content: space-between;
+    height: 40px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+
+}
+
+.logo_header
+{
+    margin-left: 20px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+
+
+
+
+nav 
+{
+    height: 20px;
+    margin-right: 100px;
+
+
+}
+
+nav > ul 
+{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+nav > ul::after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+nav > ul > li
+{
+    margin: 15px 10px 0px 40px;
+    position: relative;
+}
+
+nav > ul > li > a 
+{
+    color:white;
+    
+
+}
+
+nav li 
+{
+    list-style-type: none;
+}
+
+.submenu
+{
+    display: none;
+    visibility:hidden;
+}
+
+nav a 
+{
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+nav li:hover .submenu
+{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: -35px;
+    padding: 0px;
+    z-index: 1000;
+    visibility: visible;
+    
+}
+
+.submenu li
+{
+    border-bottom: 2px white solid;
+}
+
+.submenu li a 
+{
+    padding: 10px;
+    color: white;
+    font-size:10px;
+    width: 100px;
+    text-align: center;
+
+
+}
+
+.about:hover
+{
+    font-size: 17px;
+    border-top: 2px red solid;
+}
+
+.home:hover
+{
+    color: black;
+    font-size: 17px;
+    border-top: 2px blue solid;
+}
+
+.pages:hover
+{
+   
+    font-size: 17px;
+    border-top: 2px yellow solid;
+}
+
+

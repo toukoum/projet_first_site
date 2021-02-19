@@ -1,0 +1,42 @@
+body
+{
+    background-color: rgb(20, 20, 20);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+   
+    font-weight: lighter;
+}
+
+
+#bloc_page
+{
+    color:white;
+    
+    
+}
+
+section
+{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+
+
+article
+{   
+    margin-left: 100px;
+    margin-top: 150px;
+    text-align: justify;
+    height: 800px;
+    vertical-align: middle;
+}
+
+
+.logo_article
+{
+    height: 30px;
+    width: 25%;
+    margin-left: 10;
+    margin-right: auto;
+
+}
