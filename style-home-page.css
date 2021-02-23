@@ -35,6 +35,14 @@ article
    
 }
 
+
+article > ul > li
+{
+    margin-left: -100px;
+}
+
+
+
 #image_home_page
 {
     height: 100px;
@@ -49,10 +57,10 @@ article ul
     display: flex;
     width: 100%;
     justify-content: space-around;
-
-    
+    margin-top:100px;
 
 }
+
 article ul li 
 {
     list-style-type: none;
@@ -70,7 +78,7 @@ article ul li a
     background: url('the_image_os.jpg') no-repeat;
     position: relative;
     height : 300px;
-    width: 35%;
+    width: 30%;
     margin-left: 25px;
 }
 
@@ -79,7 +87,16 @@ article ul li a
     background: url('linux.jpg') no-repeat;
     position: relative;
     height : 300px;
-    width: 35%;
+    width: 30%;
+    background-size: cover;
+}
+
+#image_reseaux
+{
+    background: url('image_réseaux.jpg') no-repeat;
+    position: relative;
+    height:300px;
+    width: 30%;
     background-size: cover;
 }
 
@@ -87,5 +104,11 @@ article ul li a
 {
     display: flex;
     justify-content: space-around;
+    
+}
+
+#space
+{
+    height: 200px;
 }
 
