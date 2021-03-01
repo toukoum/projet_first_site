@@ -1,3 +1,9 @@
+
+/*----------------------------
+GENERAL
+-----------------------------*/
+
+
 body
 {
     background-color: rgb(20, 20, 20);
@@ -11,10 +17,6 @@ body
     margin: auto;
 }
 
-section
-{
-    margin-bottom: 20px;
-}
 
 
 
@@ -25,8 +27,13 @@ article
     display:flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 75px;
 }
+
+
+/*----------------------------
+PAGE 
+-----------------------------*/
 
 
 .logo_article
@@ -34,14 +41,6 @@ article
     height: 30px;
    
 }
-
-
-article > ul > li
-{
-    margin-left: -100px;
-}
-
-
 
 #image_home_page
 {
@@ -52,25 +51,24 @@ article > ul > li
     z-index: -1;
 }
 
-article ul 
+
+/*----------------------------
+Trois images pour naviguer entre les pages
+-----------------------------*/
+
+
+
+
+#image_linux
 {
+    background: url('linux.jpg') no-repeat;
+    position: relative;
+    height : 300px;
+    width: 30%;
+    background-size: cover;
     display: flex;
-    width: 100%;
-    justify-content: space-around;
-    margin-top:100px;
-
-}
-
-article ul li 
-{
-    list-style-type: none;
-
-}
-
-article ul li a
-{
-    color: white;
-    text-decoration: none;
+    align-items: center;
+    justify-content: center;
 }
 
 #image_os
@@ -80,16 +78,11 @@ article ul li a
     height : 300px;
     width: 30%;
     margin-left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#image_linux
-{
-    background: url('linux.jpg') no-repeat;
-    position: relative;
-    height : 300px;
-    width: 30%;
-    background-size: cover;
-}
 
 #image_reseaux
 {
@@ -98,17 +91,86 @@ article ul li a
     height:300px;
     width: 30%;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#image_reseaux:hover{
+    opacity: 0.7;
+}
+
+
+#image_linux:hover{
+    opacity: 0.7;
+}
+
+#image_os:hover{
+    opacity: 0.7;
 }
 
 #illustration
 {
     display: flex;
     justify-content: space-around;
+    margin-top: 75px;
+    margin-bottom:  100px;
     
 }
 
-#space
+/*----------------------------
+Trois liens pour naviguer entre les pages
+-----------------------------*/
+#oss
 {
-    height: 200px;
+    text-decoration: none;
+    color: white;
+    font-size: 26px;
+    text-shadow: black 2px 1px ;
+    font-weight: bold;
+   
+
 }
+
+#oss:hover 
+{
+    font-size: 27px;
+    
+
+}
+
+#cll
+{
+    text-decoration: none;
+    color: white;
+    font-size: 26px;
+    text-shadow: black 2px 1px ;
+    font-weight: bold;
+
+
+
+}
+
+#cll:hover 
+{
+    font-size: 27px;
+}
+
+#ree
+{
+    text-decoration: none;
+    text-shadow: black 2px 1px ;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+
+
+}
+
+#ree:hover 
+{
+    font-size: 27px;
+}
+
+
 

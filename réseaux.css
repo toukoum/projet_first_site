@@ -3,96 +3,114 @@ GENERAL
 ------------------------*/
 
 
-body
-{
+body{
     color:white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    text-align: justify;
     
-    background-color: black;
+    line-height: 22px;
+
+
+
 }
-
-
 
 section
 {
-    display: flex;
-    margin-bottom: 20px;
-    
-}
-
-
-
-article
-{   
-    text-align: justify;
     margin-left: 100px;
     margin-right: 100px;
-    margin-top: 150px;
+}
+
+article
+{
+    margin-top:100px;
+    display:flex;
+    flex-direction: column;
     align-items: center;
 }
 
 /*------------------------
-Titres et paragraphes
+Titre et paragraphes
 ------------------------*/
-
-#titre_principal
+#titre_principale
 {
+    font-size: 30px;
+    border: 2px chocolate solid;
+    border-radius:3px;
+    width: 100%;
     color:chocolate;
     display: flex;
-    align-items: center;
     justify-content: center;
-    border:1px chocolate solid;
+    padding: 5px;
+    margin-top: 75px;
 }
 
-h4{
-    color:blanchedalmond;
+#titre_principale:hover
+{
+    font-size: 32px;
+    color: rgb(206, 87, 2);
+    border: 2px rgb(206, 87, 2) solid;
 
 }
+
+#switch
+{
+    margin-top: 50px;
+}
+
+.under
+{
+    text-decoration: underline;
+}
+
+
+p{
+    padding-left: 3px;
+    color: rgb(255, 235, 221);
+    
+}
+
 
 p:hover
 {
-    border-left:2px rgb(224, 192, 150) solid;
-    font-size:16px;
-    padding-left: 5px;
-}
-
-h4:hover
-{
-    font-size: 17px;
-    border-left: 2px rgb(209, 147, 103) solid;
-    padding-left: 5px;
-
+    font-size: 16px;
+    color: rgb(201, 201, 201);
+    border-left: 2px white solid;
     
 
-}
 
-h3:hover
-{
-    font-size: 18px;
-    padding-left: 5px;
-    border-left: 2px rgb(206, 176, 156) solid;
-    padding-left: 5px;
-
-
-}
-
-
-h3
-{
-    color:burlywood;
-    margin-top: 50px;
-    margin-left:-10px;
-}
-
-#def
-{
-    margin-top: 100px;
 
 }
 
 
 /*------------------------
-FOOTER LITE
+IMAGES
+------------------------*/
+#two_pic
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 800px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+#the_one
+{
+    margin-top: 50px;
+}
+
+#banner
+{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 100px;
+    margin-top: 10px;
+}
+
+/*------------------------
+FOOTER
 ------------------------*/
 
 #footer
@@ -102,7 +120,7 @@ FOOTER LITE
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 20px;
     
 }
 
@@ -113,6 +131,7 @@ FOOTER LITE
     display: flex;
     align-items: flex-end;
     flex-direction: column;
+
 }
 
 
@@ -153,7 +172,7 @@ FOOTER LITE
     justify-content: center;
     align-items: center;
     margin-top: 10px;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 
@@ -168,20 +187,3 @@ FOOTER LITE
     text-decoration: none;
     color:white 
 }
-
-
-/*------------------------
-IMAGES
-------------------------*/
-
-#os_image
-{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-}
-
-
-

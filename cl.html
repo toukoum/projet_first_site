@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!--Page d'explications simple sur les principales commandes Linux-->
 <html LANG="fr">
     <head>
         <meta charset="utf-8">
@@ -9,7 +9,7 @@
     
     <body>
         <div id="bloc_page">
-            <header>
+            <header> <!--toujours le même header-->
                 <img class="logo_header" src="logo_toukoum_1.png" alt="logo toukoum écriture" />
                 <nav>
                     <ul>
@@ -29,27 +29,29 @@
             </header>
 
             <section>
-                <article>
+                <article>   <!--Page principale-->
                     <h1>Les principales commandes LINUX</h1>
-                    <p>À la "préhistoire" des systèmes d'exploitation, ces derniers étaient dépourvus d'interface graphique (système de fenêtres "pilotables" à la souris), toutes les interactions "système d'exploitation - utilisateur" se faisaient par l'intermédiaire de "lignes de commandes" (suites de caractères, souvent ésotériques, saisies par l'utilisateur). Aujourd'hui, même si les interfaces graphiques modernes permettent d'effectuer la plupart des opérations, il est important de connaitre quelques-unes de ces lignes de commandes.
+                    <p>À la "préhistoire" des systèmes d'exploitation, ces derniers étaient dépourvus d'interface graphique (système de fenêtres "pilotables" à la souris), toutes les interactions "système d'exploitation - utilisateur" se faisaient par l'intermédiaire de "lignes de commandes" (suites de caractères, souvent ésotériques, saisies par l'utilisateur). </br> Aujourd'hui, même si les interfaces graphiques modernes permettent d'effectuer la plupart des opérations, il est important de connaitre quelques-unes de ces lignes de commandes. </br>
                         Pour saisir des lignes de commandes, nous allons utiliser une console (aussi appelé terminal même si ce n'est pas exactement la même chose).
                     </p>
-                    <figure>
-                        <img src="terminal_linux.png" alt="terminal linux"/>
-                        <figcaption> Photo d'un terminal LINUX </figcaption>
+                    <figure id="term">
+                        <img src="terminal_linux.png" alt="terminal linux" height=350px width=500px/>
                     </figure>
                     <p>
                         Linux (plus généralement les systèmes de type Unix) propose un système de fichier
-                        en arborescence.
-                        <img src="linux_arbo.png" alt="arborescence de linux"/>
+                        en arborescence.</br>
+                    
                         Pour indiquer la position d'un fichier (ou d'un répertoire) dans l'arborescence, il existe
                         2 méthodes : indiquer un chemin absolu ou indiquer un chemin relatif (vous devez
                         être capable de donner un chemin relatif et un chemin absolu pour un fichier donné
-                        dans une arborescence donnée)
+                        dans une arborescence donnée).
 
                     </p>
+                    <div id="bg_image"><img src="linux_arbo.png" alt="arborescence de linux"/></div>
+                    
+
                     <h3> Listes des principales commandes LINUX à connaître :</h3>
-                    <table>
+                    <table> <!--Tableaux des principales commandes LINUX à connaitre-->
                         <tr>
                             <td>1- cd</td><td>permet de changer le répertoire courant</td>
                         </tr>
@@ -90,12 +92,12 @@
                     </p>
                     <p>● Un utilisateur un peu particulier est autorisé à modifier tous les droits : ce "super
                         utilisateur" est appelé "administrateur" ou "root". L'administrateur pourra donc
-                        attribuer ou retirer des droits aux autres utilisateurs.
+                        attribuer ou retirer des droits aux autres utilisateurs. </br></br>
                         ● Au lieu de gérer les utilisateurs un par un, il est possible de créer des groupes
                         d'utilisateurs. L'administrateur attribue des droits à un groupe au lieu d'attribuer des
                         droits particuliers à chaque utilisateur.
                     </p>
-                    <p>Les fichiers et les répertoires possèdent 3 types de droits :</p>
+                    <p class="import">Les fichiers et les répertoires possèdent 3 types de droits :</p>
                     <ul>
                         <li>les droits en lecture (symbolisés par la lettre r) : est-il possible de lire le
                             contenu de ce fichier ?
@@ -107,7 +109,7 @@
                             le contenu de ce fichier (quand le fichier du code exécutable) ?
                         </li>
                     </ul>
-                    <p>Il existe 3 types d'utilisateurs pour un fichier ou un répertoire :</p>
+                    <p class="import">Il existe 3 types d'utilisateurs pour un fichier ou un répertoire :</p>
                     <ul>
                         <li>
                             le propriétaire du fichier (par défaut c'est la personne qui a créé le fichier), il
@@ -126,7 +128,7 @@
                     </ul>
                     <p> Le propriétaire d'un fichier (ou root) peut modifier les permissions d'un fichier ou d'un
                         répertoire à l'aide de la commande chmod
-                    </p>
+                        </p>
 
 
 
@@ -135,6 +137,16 @@
 
 
             </section>
+            
+            <footer>    <!-- Footer plus simple que dans home_page.html-->
+                <div id="footer">
+                    
+                    <div id="line">
+                        <div id="btn_home"><a href="home_page.html" id="tee">Home</a></div>
+                        <div id="btn_top"><a href="cl.html" id="nee">Top</a></div>
+                    </div>
+                </div>
+            </footer>
         
     </body>
 

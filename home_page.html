@@ -1,73 +1,65 @@
-<!DOCTYPE html>
-<html LANG="fr">
-    <head>
+<!DOCTYPE html>  <!--Code html de la page d'accueil du projet Mini-site NSI -->
+<html LANG="fr">    <!-- Raphael Giraud; premier site WEB (et pas le dernier ;)-->
+    <head>          <!-- 25/02/2021-->
         <meta charset="utf-8">
         <title>TOUKOUM WEBSITE</title>
         <link rel="stylesheet" href="style-home-page.css" />
         <link rel="stylesheet" href="header.css" />
         <link rel="stylesheet" href="footer.css" />
-        <link rel="stylesheet" href="page.css" />
     </head>
     <body>
-        <div id="bloc_page">
-            <header>
+        <div id="bloc_page">  
+            <header>    <!--Header avec logo et menu déroulant-->
                 <img class="logo_header" src="logo_toukoum_1.png" alt="logo toukoum écriture" />
-                <nav>
+                <nav>   <!--navigation entre les pages du site-->
                     <ul>
-                        <li class="home"><a href="home_page.html">Home</a></li>
+                        <li class="home"><a href="home_page.html">Home</a></li> <!--Liste de liste-->
                         <li class="pages"><a href="#">Page</a>
                             <ul class="submenu">
-                                <li><a href="os.html">Operating Systeme</a></li>
+                                <li><a href="os.html">Operating Systeme</a></li>    
                                 <li><a href="cl.html">Linux Command</a></li>
                                 <li><a href="reseaux.html">Réseaux</a></li>
                             </ul>
                         </li>
-                        <li class="about"><a href="about.html">About</a></li>
-                          
+                        <li class="about"><a href="about.html">About</a></li>      
                     </ul>
                 </nav>
-
-
             </header>
             
+
             <div id="image_home_page"></div>
 
-            <section>
-                <article>
+            
+            <article>
                     
-                    <div class="logo_article">                    
-                        <img src="the_logo.png" alt="logo toukoum" class="logo_article"/>
-                    </div>
+                <div class="logo_article">                    
+                    <img src="the_logo.png" alt="logo toukoum" class="logo_article"/>
+                </div>
 
                     
-                    <h2>BIENVENUE !</h2>
-                    <p> Ceci est mon premier site web. </br>
+                <h2>BIENVENUE !</h2>
+                <p> Ceci est mon premier site web. </br>
                     Soyez attentif, pleins de détails sont présent ;) </br> 
                     Vous retrouverez 3 pages explicatives sur :  </p>
                     
-                    <ul> 
-                        <li> <a href="os.html">Les systèmes d'exploitation</a></li>
-                        <li id="linuux"> <a href="cl.html">Les principales commandes LINUX</a></li>
-                        <li> <a href="reseaux.html">Les réseaux</a></li>  
-                    </ul>
+                    
 
                 
                     
 
-                </article>
-                <div id="illustration">
-                    <div id="image_os"></div>
-                    <div id="image_linux"></div>
-                    <div id="image_reseaux"></div>
-                </div>
+            </article>
+           
+           
+            <div id="illustration"> <!--Trois image pour naviguer entre les pages -->
+                <div id="image_os"><a href="os.html" id="oss">Système d'exploitation</a></div>
+                <div id="image_linux"><a href="cl.html" id="cll">Commandes LINUX</a></div>
+                <div id="image_reseaux"><a href="reseaux.html"id="ree">Réseaux</a></div>
+            </div>
 
-                <div id="space"> </div>
 
 
-
-            </section>
             
-            <footer>
+            <footer>  <!--Footer avec les diiférentes pages, Mon contact, mes horraires et mes médias-->
                 <div class="contenu-footer">
             
                     <div class="bloc footer-page">
@@ -113,25 +105,10 @@
                                 FACEBOOK</a></li>                        
                         </ul>
                     </div>
-        
                 </div>
-            
             </footer>
-    
-
-
-
-
         </div>
     </body>
-
-
-
-
-
-</html>
-
-
 
 
 

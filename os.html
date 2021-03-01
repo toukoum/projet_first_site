@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+<!DOCTYPE html> <!--Page d'explications simple sur les réseaux-->
 <html LANG="fr">
     <head>
         <meta charset="utf-8">
@@ -9,7 +10,7 @@
 
     <body>
         <div id="bloc_page">
-            <header>
+            <header>    <!--toujours le même header-->
                 <img class="logo_header" src="logo_toukoum_1.png" alt="logo toukoum écriture" />
                 <nav>
                     <ul>
@@ -29,21 +30,20 @@
             </header>
 
             <section>
-                <article class="explication">
-                    <h2> Les systèmes d'exploitations</h2>
-                    <h3> Définition </h3>
-                    <p> Un système d'exploitation, abrégé parfois SE, (ou Operating System en anglais, que l'on rencontre souvent sous l'abréviation OS) représente l'ensemble des programmes qui pilote les différents composants (disque dur, écran, processeur, mémoire etc...) de l'appareil informatique et lui permet donc de fonctionner.
-                        Il permet donc de faire l'interface entre l'utilisateur et le matériel informatique. Il est d'ailleurs chargé en premier lors du démarrage de l'appareil.
-                        Le système d'exploitation permet de faire fonctionner les différents périphériques (carte son, carte graphique, souris, clavier etc...). L'utilisation de pilotes (drivers en anglais) permettent au système d'exploitation de communiquer et de donner des instructions aux périphériques qui ne pourraient fonctionner sans eux.
+                <article class="explication">   <!--Page principale-->
+                    <h2 id="titre_principal"> Les systèmes d'exploitations</h2>
+                    <h3 id="def"> Définition </h3>
+                    <p> Un système d'exploitation, abrégé parfois SE, (ou Operating System en anglais, que l'on rencontre souvent sous l'abréviation OS) représente l'ensemble des programmes qui pilote les différents composants (disque dur, écran, processeur, mémoire etc...) de l'appareil informatique et lui permet donc de fonctionner. </br>
+                        Il permet donc de faire l'interface entre l'utilisateur et le matériel informatique.</br> Il est d'ailleurs chargé en premier lors du démarrage de l'appareil.
+                        Le système d'exploitation permet de faire fonctionner les différents périphériques (carte son, carte graphique, souris, clavier etc...). L'utilisation de pilotes (drivers en anglais) permettent au système d'exploitation de communiquer et de donner des instructions aux périphériques qui ne pourraient fonctionner sans eux. </br>
                         On retrouve un système d'exploitation pré installé sur tout type d'appareil informatique : ordinateur personnel, smartphone, tablette tactile, liseuse, console de jeu etc...
                         Pour une définition plus vaste et plus précise (mais aussi beaucoup plus technique !) :
                         <a href="https://fr.wikipedia.org/wiki/Syst%C3%A8me_d'exploitation" target="_blank">Wikipedia</a>
                     </p>
 
                     <h3> Les principaux systèmes d'exploitations </h3>
-                    <figure >
-                        <img src="systemes_exploitations.jpg" alt="principaux systèmes d'exploitations" />
-                        <figcaption>Logos des principaux systèmes d'exploitations</figcaption>
+                    <figure id="os_image" >
+                        <img src="systemes_exploitations.jpg" alt="principaux systèmes d'exploitations" height= 400px width= 550px/>
                     </figure>
                     <h3>Systèmes d'exploitation pour ordinateurs</h3>
                     <h4>WINDOWS</h4>
@@ -74,6 +74,18 @@
             </section>
         
         </div>
+
+        <footer>    <!--FOOTER LITE-->
+            <div id="footer">
+                
+                <div id="line">
+                    <div id="btn_home"><a href="home_page.html" id="tee">Home</a></div>
+                    <div id="btn_top"><a href="os.html" id="nee">Top</a></div>
+                </div>
+            </div>
+        </footer>
+
+
     </body>
 
 
