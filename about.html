@@ -1,23 +1,78 @@
 <!DOCTYPE html>
 <html LANG="fr">
     <head>
-        <meta charset="utf-8">
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
         <title>TOUKOUM WEBSITE</title>
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="style_quizz.html.css" />
+		<link rel="stylesheet" href="header.css" />
+		<script src="quizz.js"> </script>
     </head>
     
-    <body>
-        <p>Bonjour souhaitez vous visiter ma maison,  <br/> elle est cool !! </p>
-        
-    </body>
+	<body >
+	
+		<header>    <!--Header avec logo et menu déroulant-->
+                <img class="logo_header" src="logo_toukoum_1.png" alt="logo toukoum écriture" />
+                <nav>   <!--navigation entre les pages du site-->
+                    <ul>
+                        <li class="home"><a href="home_page.html">Home</a></li> <!--Liste de liste-->
+                        <li class="pages"><a href="#">Page</a>
+                            <ul class="submenu">
+                                <li><a href="os.html">Operating Systeme</a></li>    
+                                <li><a href="cl.html">Linux Command</a></li>
+                                <li><a href="reseaux.html">Réseaux</a></li>
+                            </ul>
+                        </li>
+                        <li class="about"><a href="about.html">About</a></li>      
+                    </ul>
+                </nav>
+        </header>
+	
+	
+		<section>
+			<form name="quiz" id="quiz">
+				<div>
+					<p>Q1 - Quelles sont les quatre parties distinctes de l’architecture de Von Neumann ?</p>
+					<p><input type="radio" name="question1" value="A">A- L’unité logique, l’unité de contrôle, la mémoire et les dispositifs d’entrée-sortie	</p>
+					<p><input type="radio" name="question1" value="B">B- L’écran, le clavier, le disque dur et le micro-processeur</p>
+					<p><input type="radio" name="question1" value="C">C- Le disque dur, le micro-processeur, la carte-mère et la carte graphique</p>
+					<p><input type="radio" name="question1" value="D">D- La mémoire des programmes, la mémoire des données, les entrées-sorties et l’unité logique
+
+					</p>
+
+				</div>
+
+				<div>
+					<p>Q2 - Dans un ordinateur, que permet de faire la mémoire vive ?</p>
+					<p><input type="radio" name="question2" value="A">A- Stocker les données de façon permanente</p>
+					<p><input type="radio" name="question2" value="B">B- Afficher les informations sur l’écran</p>
+					<p><input type="radio" name="question2" value="C">C- Réaliser les calculs</p>
+					<p><input type="radio" name="question2" value="D">D- Stocker les données de façon temporaire</p>
+
+				</div>
+
+				<div>
+					<p>Q3 - Laquelle des mémoires suivantes est volatile ?</p>
+					<p><input type="radio" name="question3" value="A">A- RAM</p>
+					<p><input type="radio" name="question3" value="B">B- disque dur</p>
+					<p><input type="radio" name="question3" value="C">C- ROM</p>
+					<p><input type="radio" name="question3" value="D">D- clef USB</p>
+
+				</div>
 
 
+			
+
+			</form>
+
+			<div >
+				<input type="button" name="" value="Valider mes réponses" onclick="valider()">
+			</div>
 
 
+			<p id="resultat"></p>
+		</section>
 
-</html>
-
-
+	</body>
 
 
 
