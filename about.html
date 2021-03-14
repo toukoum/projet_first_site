@@ -27,11 +27,17 @@
                 </nav>
         </header>
 	
-	
 		<section>
+		
+		<!DOCTYPE html>
+		
+		</html>
+			<div id="banniere"> </div>
+			
+			<h1 id="titre"> Quiz ! </h1>
 			<form name="quiz" id="quiz">
 				<div>
-					<p>Q1 - Quelles sont les quatre parties distinctes de l’architecture de Von Neumann ?</p>
+					<p class="question">Q1 - Quelles sont les quatre parties distinctes de l’architecture de Von Neumann ?</p>
 					<p><input type="radio" name="question1" value="A">A- L’unité logique, l’unité de contrôle, la mémoire et les dispositifs d’entrée-sortie	</p>
 					<p><input type="radio" name="question1" value="B">B- L’écran, le clavier, le disque dur et le micro-processeur</p>
 					<p><input type="radio" name="question1" value="C">C- Le disque dur, le micro-processeur, la carte-mère et la carte graphique</p>
@@ -42,7 +48,7 @@
 				</div>
 
 				<div>
-					<p>Q2 - Dans un ordinateur, que permet de faire la mémoire vive ?</p>
+					<p class="question">Q2 - Dans un ordinateur, que permet de faire la mémoire vive ?</p>
 					<p><input type="radio" name="question2" value="A">A- Stocker les données de façon permanente</p>
 					<p><input type="radio" name="question2" value="B">B- Afficher les informations sur l’écran</p>
 					<p><input type="radio" name="question2" value="C">C- Réaliser les calculs</p>
@@ -51,11 +57,78 @@
 				</div>
 
 				<div>
-					<p>Q3 - Laquelle des mémoires suivantes est volatile ?</p>
+					<p class="question">Q3 - Laquelle des mémoires suivantes est volatile ?</p>
 					<p><input type="radio" name="question3" value="A">A- RAM</p>
 					<p><input type="radio" name="question3" value="B">B- disque dur</p>
 					<p><input type="radio" name="question3" value="C">C- ROM</p>
 					<p><input type="radio" name="question3" value="D">D- clef USB</p>
+
+				</div>
+				
+				<div>
+					<p class="question">Q4 - Quel matériel permet d'interconnecter des réseaux entre eux : </p>
+					<p><input type="radio" name="question4" value="A">A- un routeur </p>
+					<p><input type="radio" name="question4" value="B">B- un commutateur (ou switch) </p>
+					<p><input type="radio" name="question4" value="C">C- un interconnecteur </p>
+					<p><input type="radio" name="question4" value="D">D- un serveur </p>
+
+				</div>
+				
+				<div>
+					<p class="question">Q5 - Laquelle de ces écritures ne désigne pas une adresse IP ? </p>
+					<p><input type="radio" name="question5" value="A">A- 127.0.0.1 </p>
+					<p><input type="radio" name="question5" value="B">B- 207.142.131.245 </p>
+					<p><input type="radio" name="question5" value="C">C- 192.168.229.48 </p>
+					<p><input type="radio" name="question5" value="D">D- 296.141.2.4 </p>
+
+				</div>
+				
+				
+				<div>
+					<p class="question">Q6 - Quel matériel permet d'interconnecter des ordinateurs entre eux : </p>
+					<p><input type="radio" name="question6" value="A">A- un routeur </p>
+					<p><input type="radio" name="question6" value="B">B- un commutateur (ou switch) </p>
+					<p><input type="radio" name="question6" value="C">C- un interconnecteur </p>
+					<p><input type="radio" name="question6" value="D">D- un serveur  </p>
+
+				</div>
+				
+					<div>
+					<p class="question">Q7 - Quel est le principe de l'encapsulation des données dans un réseau informatique ? </p>
+					<p><input type="radio" name="question7" value="A">A- Cacher les données afin que l'on ne puisse pas les lire </p>
+					<p><input type="radio" name="question7" value="B">B- Mettre les données les unes à la suite des autres </p>
+					<p><input type="radio" name="question7" value="C">C- Chiffrer les données afin que l'on ne puisse pas les lire </p>
+					<p><input type="radio" name="question7" value="D">D- Inclure les données d'un protocole dans un autre protocole </p>
+
+				</div>
+				
+				
+					<div>
+					<p class="question">Q8 - Quelle commande permet de connaître le répertoire courant ? </p>
+					<p><input type="radio" name="question8" value="A">A- cd </p>
+					<p><input type="radio" name="question8" value="B">B- ls </p>
+					<p><input type="radio" name="question8" value="C">C- pwd </p>
+					<p><input type="radio" name="question8" value="D">D- chmod </p>
+
+				</div>
+				
+				
+					<div>
+					<p class="question">Q9 - Dans la console Linux, quelle commande faut-il exécuter pour créer un dossier </br> nommé travail dans le dossier courant ? </p>
+					<p><input type="radio" name="question9" value="A">A- pwd travail </p>
+					<p><input type="radio" name="question9" value="B">B- cd travail </p>
+					<p><input type="radio" name="question9" value="C">C- mkdir travail </p>
+					<p><input type="radio" name="question9" value="D">D- dir /home/martin/travail </p>
+
+				</div>
+				
+				
+					<div>
+					<p class="question">Q10 - Dans la console Linux, quelle commande faut-il exécuter pour obtenir la </br> documentation sur la commande pwd ? </p>
+					<p><input type="radio" name="question10" value="A">A- man pwd </p>
+					<p><input type="radio" name="question10" value="B">B- cd pwd </p>
+					<p><input type="radio" name="question10" value="C">C- mkdir pwd </p>
+					<p><input type="radio" name="question10" value="D">D- ls pwd </p>
 
 				</div>
 
@@ -65,7 +138,7 @@
 			</form>
 
 			<div >
-				<input type="button" name="" value="Valider mes réponses" onclick="valider()">
+				<input type="button" name="" value="Valider mes réponses" id="bouton" onclick="valider()">
 			</div>
 
 
