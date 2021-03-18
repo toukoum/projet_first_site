@@ -22,29 +22,23 @@
                                 <li><a href="reseaux.html">Réseaux</a></li>
                             </ul>
                         </li>
-                        <li class="about"><a href="about.html">About</a></li>      
+                        <li class="about"><a href="quiz.html">Quiz</a></li>      
                     </ul>
                 </nav>
         </header>
 	
 		<section>
-		
-		<!DOCTYPE html>
-		
-		</html>
-			<div id="banniere"> </div>
+
+			<div id="banniere"> </div>			<!--banniere avec comme background une photo.-->
 			
-			<h1 id="titre"> Quiz ! </h1>
-			<form name="quiz" id="quiz">
+			<h1 id="titre"> Quiz ! </h1>		<!--Titre principale-->
+			<form name="quiz" id="quiz">		<!--Quiz avec dix questions toutes liées dans le form-->
 				<div>
 					<p class="question">Q1 - Quelles sont les quatre parties distinctes de l’architecture de Von Neumann ?</p>
 					<p><input type="radio" name="question1" value="A">A- L’unité logique, l’unité de contrôle, la mémoire et les dispositifs d’entrée-sortie	</p>
 					<p><input type="radio" name="question1" value="B">B- L’écran, le clavier, le disque dur et le micro-processeur</p>
 					<p><input type="radio" name="question1" value="C">C- Le disque dur, le micro-processeur, la carte-mère et la carte graphique</p>
-					<p><input type="radio" name="question1" value="D">D- La mémoire des programmes, la mémoire des données, les entrées-sorties et l’unité logique
-
-					</p>
-
+					<p><input type="radio" name="question1" value="D">D- La mémoire des programmes, la mémoire des données, les entrées-sorties et l’unité logique</p>
 				</div>
 
 				<div>
@@ -53,7 +47,6 @@
 					<p><input type="radio" name="question2" value="B">B- Afficher les informations sur l’écran</p>
 					<p><input type="radio" name="question2" value="C">C- Réaliser les calculs</p>
 					<p><input type="radio" name="question2" value="D">D- Stocker les données de façon temporaire</p>
-
 				</div>
 
 				<div>
@@ -62,7 +55,6 @@
 					<p><input type="radio" name="question3" value="B">B- disque dur</p>
 					<p><input type="radio" name="question3" value="C">C- ROM</p>
 					<p><input type="radio" name="question3" value="D">D- clef USB</p>
-
 				</div>
 				
 				<div>
@@ -71,7 +63,6 @@
 					<p><input type="radio" name="question4" value="B">B- un commutateur (ou switch) </p>
 					<p><input type="radio" name="question4" value="C">C- un interconnecteur </p>
 					<p><input type="radio" name="question4" value="D">D- un serveur </p>
-
 				</div>
 				
 				<div>
@@ -80,7 +71,6 @@
 					<p><input type="radio" name="question5" value="B">B- 207.142.131.245 </p>
 					<p><input type="radio" name="question5" value="C">C- 192.168.229.48 </p>
 					<p><input type="radio" name="question5" value="D">D- 296.141.2.4 </p>
-
 				</div>
 				
 				
@@ -90,65 +80,68 @@
 					<p><input type="radio" name="question6" value="B">B- un commutateur (ou switch) </p>
 					<p><input type="radio" name="question6" value="C">C- un interconnecteur </p>
 					<p><input type="radio" name="question6" value="D">D- un serveur  </p>
-
 				</div>
 				
-					<div>
+				<div>
 					<p class="question">Q7 - Quel est le principe de l'encapsulation des données dans un réseau informatique ? </p>
 					<p><input type="radio" name="question7" value="A">A- Cacher les données afin que l'on ne puisse pas les lire </p>
 					<p><input type="radio" name="question7" value="B">B- Mettre les données les unes à la suite des autres </p>
 					<p><input type="radio" name="question7" value="C">C- Chiffrer les données afin que l'on ne puisse pas les lire </p>
 					<p><input type="radio" name="question7" value="D">D- Inclure les données d'un protocole dans un autre protocole </p>
-
 				</div>
 				
 				
-					<div>
+				<div>
 					<p class="question">Q8 - Quelle commande permet de connaître le répertoire courant ? </p>
 					<p><input type="radio" name="question8" value="A">A- cd </p>
 					<p><input type="radio" name="question8" value="B">B- ls </p>
 					<p><input type="radio" name="question8" value="C">C- pwd </p>
 					<p><input type="radio" name="question8" value="D">D- chmod </p>
-
 				</div>
 				
 				
-					<div>
+				<div>
 					<p class="question">Q9 - Dans la console Linux, quelle commande faut-il exécuter pour créer un dossier </br> nommé travail dans le dossier courant ? </p>
 					<p><input type="radio" name="question9" value="A">A- pwd travail </p>
 					<p><input type="radio" name="question9" value="B">B- cd travail </p>
 					<p><input type="radio" name="question9" value="C">C- mkdir travail </p>
 					<p><input type="radio" name="question9" value="D">D- dir /home/martin/travail </p>
-
 				</div>
 				
 				
-					<div>
+				<div>
 					<p class="question">Q10 - Dans la console Linux, quelle commande faut-il exécuter pour obtenir la </br> documentation sur la commande pwd ? </p>
 					<p><input type="radio" name="question10" value="A">A- man pwd </p>
 					<p><input type="radio" name="question10" value="B">B- cd pwd </p>
 					<p><input type="radio" name="question10" value="C">C- mkdir pwd </p>
 					<p><input type="radio" name="question10" value="D">D- ls pwd </p>
-
-				</div>
-
-
-			
+				</div>	
 
 			</form>
 
-			<div >
-				<input type="button" name="" value="Valider mes réponses" id="bouton" onclick="valider()">
-			</div>
+			
 
 
-			<p id="resultat"></p>
+			<input type="button" name="" value="Valider mes réponses" id="bouton" onclick="valider()">	<!--bouton pour valider-->
+			
+			<input Type="button" value="Re-faire le Quiz" onClick="history.go(0)" id="refresh">		<!--bouton pour ré-initialiser le quiz-->
+			
+			<p id="resultat"></p>	<!-- paragraphe qui affiche les résultat grâce au javascript !-->
+
+
 		</section>
 
+		<footer>    <!-- Footer plus simple que dans home_page.html-->
+			<div id="footer">
+				
+				<div id="line">
+					<div id="btn_home"><a href="home_page.html" id="tee">Home</a></div>
+					<div id="btn_top"><a href="quiz.html" id="nee">Top</a></div>
+				</div>
+			</div>
+		</footer>
+
 	</body>
-
-
-
 
 
 </html>

@@ -1,3 +1,8 @@
+/*------------------------
+GENERAL (titres et banniere)
+------------------------*/
+
+
 body
 {
 	background-color: black;
@@ -11,23 +16,6 @@ section
 	flex-direction: column;
 	align-items: center;
 	margin-top: 100px;
-}
-
-.question
-{
-	font-size: 18px;
-	font-style:italic;
-	color:#d4d4ff;
-	margin: 75px 0px 15px;
-	margin-left:-15px;
-}
-
-p
-{
-	font-size:14px;
-	color: #eaeaff;
-	
-
 }
 
 #titre
@@ -55,6 +43,35 @@ p
 	
 
 
+/*------------------------
+QUIZ (questions et bouton)
+------------------------*/
+.question
+{
+	font-size: 18px;
+	font-style:italic;
+	color:#d4d4ff;
+	margin: 75px 0px 15px;
+	margin-left:-15px;
+}
+
+.question:hover
+{
+    border-left: 2px solid  #d4d4ff;
+    font-size:19px;
+    padding-left: 3px;
+}
+
+p
+{
+	font-size:14px;
+	color: #eaeaff;
+	
+
+}
+
+
+
 #bouton  {
 	margin-top:50px;
 	width:165px;
@@ -71,4 +88,115 @@ p
 
 #bouton:hover {
 	font-size:13.5px;
+}
+
+#resultat
+{
+	font-size:22px;
+	color:rgb(141, 172, 230);
+}
+
+
+#refresh
+{
+    margin-top:30px;
+	width:140px;
+	line-height:30px;
+	text-align:center;
+	vertical-align:middle;
+	color:white;
+	text-decoration:sans-serif;
+	font-weight:bold;
+	background:#010118;
+    margin-bottom: 30px;
+
+}
+
+
+/*------------------------
+FOOTER LITE
+------------------------*/
+
+#footer
+{
+    height:100px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+
+#line
+{
+    border-top: 2px white dashed;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+
+}
+
+#term
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+#btn_home
+{
+    width: 60px;
+    height: 20px;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-right: 20px;
+
+    
+}
+
+#btn_home:hover
+{
+    border-right: 2px white solid ;
+}
+
+#btn_top:hover
+{
+    border-right: 2px white solid;
+}
+
+#btn_top
+{
+    width: 60px;
+    height: 20px;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+
+#nee
+{
+    text-decoration: none;
+    color:white 
+}
+
+#tee
+{
+    text-decoration: none;
+    color:white 
 }
